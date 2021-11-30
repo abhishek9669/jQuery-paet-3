@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            div{
+                border: 10px solid black;
+                padding: 10px;
+            }
+            div>ul{
+                border: 10px solid green;
+                padding: 10px;
+
+            }
+            div>ul>li{
+                border: 10px solid blue;
+                padding: 10px;
+
+            }
+            div>ul>li>a{
+                display: block;
+                border: 10px solid red;
+                padding: 10px;
+
+            }
+            div>ul>li>a>span{
+                
+                display: block;
+                border: 10px solid purple;
+                padding: 10px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>div
+            <ul>ul
+                <li>li
+                    <a href="">a
+                        <span>
+                            span
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <script>
+        (function($){
+           // alert('okokok');
+
+
+           $('ul').children().css({'border':'50px solid blue','color':'red'});
+        //    $('ul').children().css('border','50px solid blue','color','red');
+
+        $('div').find('li').css('background-color',"blue");
+
+        })(jQuery);
+
+
+    </script>
+        
+    </body>
+</html>
